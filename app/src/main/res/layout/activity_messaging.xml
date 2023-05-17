@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9CAEC6"
+    tools:context=".Messaging">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="282dp"
+        android:layout_height="346dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="500dp"
+        app:srcCompat="@drawable/adoption" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:lineSpacingExtra="-10sp"
+        android:shadowColor="#000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="4"
+        android:text="CONTACT "
+        android:textAlignment="center"
+        android:textColor="#FFFAFA"
+        android:textSize="48sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.cardview.widget.CardView
+        style="@style/CardView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#fff"
+        android:elevation="10dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="50dp">
+
+        <TextView
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:shadowColor="#0D0D0D"
+            android:shadowDx="2"
+            android:shadowRadius="3"
+            android:text="TO ADOPT THE PET PLEASE CONTACT THE INFORMATION BELOW:"
+            android:textAlignment="center"
+            android:textColor="#9CAEC6"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/email_message"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="130dp"
+            android:fontFamily="sans-serif-black"
+            android:shadowColor="#0D0D0D"
+            android:shadowDx="2"
+            android:shadowRadius="3"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#8DBFF1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/contact_message"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="170dp"
+            android:fontFamily="sans-serif-black"
+            android:shadowColor="#0D0D0D"
+            android:shadowDx="2"
+            android:shadowRadius="3"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#A7C7E7"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

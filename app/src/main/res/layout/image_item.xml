@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    android:layout_margin="8dp">
+
+    <Button
+        android:id="@+id/adopt"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="#9CAEC6"
+        android:elevation="10dp"
+        android:text="Adopt"
+        app:cornerRadius="20dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/imageRecycle"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pet" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="48dp"
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/nameRecycle"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:shadowColor="#545353"
+                android:shadowDx="2"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="Name"
+                android:textColor="#9CAEC6"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/genderRecycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/oxygen_light"
+                android:text="Gender"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/descRecycle"
+                android:layout_width="153dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/oxygen_light"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/usernameRecycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="115dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="Username"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardView"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_marginTop="-50dp"
+            android:backgroundTint="#9CAEC6"
+            android:elevation="10dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="70dp">
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/chats"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/chats" />
+
+    <ImageView
+        android:id="@+id/backtomenu"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/dasharrow" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:shadowColor="#212121"
+        android:shadowDx="2"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:text="TextView"
+        android:textColor="#FAFCFE"
+        android:textSize="34sp"
+        tools:text="Hello, " />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#222222"
+        android:shadowDx="2"
+        android:shadowRadius="3"
+        android:text="TextView"
+        android:textColor="#FCFDFF"
+        android:textSize="34sp"
+        tools:text="User!" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/editbg"
+        android:elevation="5dp"
+        android:ems="10"
+        android:paddingLeft="30dp"
+        android:shadowColor="#060606"
+        app:queryHint="Searching..." />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="scrollview" />
+
+    <ProgressBar
+        android:id="@+id/progress_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="250dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backtomenu"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="155dp" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeScreen">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="477dp"
+        app:srcCompat="@drawable/pet" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardView"
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            android:layout_marginTop="350dp"
+            android:backgroundTint="#9CAEC6"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="50dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:lineSpacingExtra="-10sp"
+                android:shadowColor="#000000"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="4"
+                android:text="Give a pet a second chance: Rehome, don't shop."
+                android:textAlignment="center"
+                android:textColor="#FFFAFA"
+                android:textSize="48sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signIn"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="290dp"
+                android:background="@drawable/button"
+                android:backgroundTint="#F2F2F2"
+                android:shadowColor="#2D2D2D"
+                android:text="SIGN IN"
+                android:textColor="#070707" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signUp"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="290dp"
+                android:background="@drawable/button"
+                android:backgroundTint="#000000"
+                android:shadowColor="#2D2D2D"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:text="SIGN UP"
+                android:textColor="#FBFBFB" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

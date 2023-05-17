@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9CAEC6"
+    tools:context=".postApet">
+
+    <ImageView
+        android:id="@+id/backtomenu"
+        android:layout_width="49dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:lineSpacingExtra="-5sp"
+        android:shadowColor="#040404"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:text=" Alright, let's choose a photo and add a description."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#F5F5F5"
+        android:textSize="24sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardView"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="130dp"
+            android:backgroundTint="#FEFEFF"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="50dp">
+
+            <ImageView
+                android:id="@+id/imagePet"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/siamese" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imagefile"
+            android:layout_width="220dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="340dp"
+            android:background="@drawable/button"
+            android:backgroundTint="#F7F7F7"
+            android:shadowColor="#2D2D2D"
+            android:text="Choose your file"
+            android:textColor="#0A0A0A" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="395dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:shadowColor="#040404"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:text="NAME OF PET:"
+            android:textColor="#F5F5F5"
+            android:textSize="20sp" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/nameofPet"
+            android:layout_width="364dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="435dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="#FFFFFF"
+            android:hint="NAME"
+            android:paddingLeft="15dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="490dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:shadowColor="#040404"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:text="GENDER:"
+            android:textColor="#F5F5F5"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/bBoy"
+            android:layout_width="142dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="530dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="#75BEF8"
+            android:contentDescription="male"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/neuter" />
+
+        <ImageButton
+            android:id="@+id/bGirl"
+            android:layout_width="142dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="530dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="#FFABC8"
+            android:contentDescription="female"
+            app:srcCompat="@drawable/spay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="590dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:shadowColor="#040404"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:text="DESCRIBE YOUR PET:"
+            android:textColor="#F5F5F5"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/descPet"
+            android:layout_width="364dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="620dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Describe your pet"
+            android:paddingLeft="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/postApet"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="720dp"
+            android:background="@drawable/button"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="14sp"
+            tools:text="POST YOUR PET" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/uploads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="770dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:text="Show your uploads"
+            android:textColor="@color/text_shadow_white"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

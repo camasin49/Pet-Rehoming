@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".postApet">
+
+    <TextView
+        android:id="@+id/username2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/genderTxt"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="570dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:text="Sample"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F5F5F5"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/backtomenu"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:lineSpacingExtra="-5sp"
+        android:shadowColor="#040404"
+        android:shadowDx="2"
+        android:shadowDy="1"
+        android:shadowRadius="4"
+        android:text=" Alright, let's choose a photo and add a description."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#9CAEC6"
+        android:textSize="24sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="130dp"
+            android:backgroundTint="#FEFEFF"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="70dp">
+
+            <ImageView
+                android:id="@+id/imagePet"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/siamese" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imagefile"
+            android:layout_width="220dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="340dp"
+            android:background="@drawable/button"
+            android:shadowColor="#2D2D2D"
+            android:shadowDx="2"
+            android:shadowDy="1"
+            android:shadowRadius="4"
+            android:text="Choose your file"
+            android:textColor="#FBF9F9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="395dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:shadowColor="#040404"
+            android:shadowDx="2"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:text="NAME OF PET:"
+            android:textColor="#9CAEC6"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/nameofPet"
+            android:layout_width="364dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="435dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="#FFFFFF"
+            android:hint="NAME"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="490dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:shadowColor="#040404"
+            android:shadowDx="2"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:text="GENDER:"
+            android:textColor="#9CAEC6"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/bBoy"
+            android:layout_width="142dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="520dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="#75BEF8"
+            android:contentDescription="male"
+            android:elevation="5dp"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/neuter" />
+
+        <ImageButton
+            android:id="@+id/bGirl"
+            android:layout_width="142dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="520dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="#FFABC8"
+            android:contentDescription="female"
+            android:elevation="5dp"
+            app:srcCompat="@drawable/spay" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="600dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:shadowColor="#040404"
+            android:shadowDx="2"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:text="DESCRIBE YOUR PET:"
+            android:textColor="#9CAEC6"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/descPet"
+            android:layout_width="364dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="630dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Describe your pet"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="680dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:shadowColor="#040404"
+            android:shadowDx="2"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:text="ADD YOUR CONTACT NUMBER:"
+            android:textColor="#9CAEC6"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/contactNo"
+            android:layout_width="364dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="710dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Contact Number"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/postApet"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="760dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/oxygen_bold"
+            android:shadowDx="2"
+            android:shadowDy="1"
+            android:shadowRadius="4"
+            android:text="POST YOUR PET"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/uploads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="810dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="Show your uploads"
+            android:textColor="#9CAEC6"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

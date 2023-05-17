@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "192927532831",
+    "project_id": "petrehoming-bb995",
+    "storage_bucket": "petrehoming-bb995.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192927532831:android:8bcc40d7824622231ad22a",
+        "android_client_info": {
+          "package_name": "com.example.petrehoming"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192927532831-qrusa4aev89333ibogv6vtoc563gvbcs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFkq8HoWoSk3sKV7MhLhEDc9_GaSrEses"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192927532831-qrusa4aev89333ibogv6vtoc563gvbcs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
